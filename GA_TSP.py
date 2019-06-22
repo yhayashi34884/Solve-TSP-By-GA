@@ -1,5 +1,4 @@
 # coding:utf-8
-# date:20170824
 # GAで巡回セールスマン問題を解く
 # とりあえず九州版 (各県の一番大きい駅を巡回する)
 # コストは公共交通機関を利用した場合の最安移動費
@@ -12,7 +11,6 @@ import random
 import copy
 import matplotlib.pyplot as pl
 import folium
-import numpy as np
 import pandas as pd
 import csv
 import codecs
@@ -238,7 +236,7 @@ def mutation():
 # OpenStreetMap上にTPSの結果を描画し、HTMLファイルで保存する関数
 def map_show(ansroute):
     # OpenStreetMapの表示位置
-    map = folium.Map(location=[35.690163, 139,699187], zoom_start=5)
+    map = folium.Map(location=[35.690163, 139.699187], zoom_start=5)
     WEIGHT = 5
     points = []
 
@@ -285,12 +283,12 @@ while cnt < generation:
         totalcostlist.append(Getcost(routelist[i]))
     mincost = min(totalcostlist)
     ans = routelist[totalcostlist.index(mincost)]
-    print ('************************ {}世代 *************************'.format(cnt))
+    print ('************************ Number of generations : {} *************************'.format(cnt))
     pl.plot(cnt,mincost,"r.")
     comparison()
-    print ('適合率 = {}'.format(compatible))
-    print ('最小コスト = {}'.format(mincost))
-    print ('ルート = {}'.format(ans))
+    print ('Fitness = {}'.format(compatible))
+    print ('Minimum Cost = {}'.format(mincost))
+    print ('Route = {}'.format(ans))
     elitecopy()
     crossover()
     mutation()
