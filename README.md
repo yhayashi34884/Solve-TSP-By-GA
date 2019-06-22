@@ -48,7 +48,7 @@ Fitness = [11.94901, 11.94901, 11.94901, 11.94901, 11.94901, 11.94901, 11.94901,
 Minimum Cost = 33900
 Route = [46, 47, 40, 41, 42, 43, 44, 45]
 ```
-![Figure_ex](https://i.imgur.com/pZSI277.png)
+![Figure_ex_tsp](https://i.imgur.com/3sxjo9P.png)
 
 After execution, an HTML file "map.html" is generated.
 
