@@ -1,4 +1,4 @@
-# Solve-TSP-with-GA
+# Solve-TSP-By-GA
 Solve the traveling salesman problem (TSP) using a genetic algorithm.
 This time, we have converted the problem of visiting each prefecture of Kyushu in Japan into TSP.
 This program finds the minimum cost of the TSP and plots it on a graph. It also shows the lowest cost routes on the OpenStreetMap.
@@ -19,8 +19,8 @@ $ pip install pandas
 
 ## Usage
 ```bash
-$ git clone https://github.com/yhayashi34884/Solve-TSP-with-GA
-$ cd Solve-TSP-with-GA
+$ git clone https://github.com/yhayashi34884/Solve-TSP-By-GA
+$ cd Solve-TSP-By-GA
 ```
 
 Execute following command.
